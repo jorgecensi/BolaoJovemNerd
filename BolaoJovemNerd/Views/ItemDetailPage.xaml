@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BolaoJovemNerd.Views.ItemDetailPage" Title="{Binding Title}">
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="Participante:" FontSize="Medium" />
+        <Label Text="{Binding Item.Text}" FontSize="Small" />
+        <Label Text="Pontos:" FontSize="Medium" />
+        <Label Text="{Binding Item.Description}" FontSize="Small" />
+        <Label Text="Personagens escolhidos para bater as botas:" FontSize="Medium" />
+        <Label Text="{Binding Item.CharactersList}" FontSize="Small" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BolaoJovemNerd.Views.ItemsPage" 
+             Title="{Binding Title}" 
+             x:Name="BrowseItemsPage"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:models="clr-namespace:BolaoJovemNerd.Models"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d">
+    <Grid>
+        <ListView x:Name="ItemsListView" 
+                  ItemsSource="{Binding Items}" 
+                  VerticalOptions="FillAndExpand" 
+                  HasUnevenRows="true" 
+                  RefreshCommand="{Binding LoadItemsCommand}" 
+                  IsPullToRefreshEnabled="true" 
+                  IsRefreshing="{Binding IsBusy, Mode=OneWay}" 
+                  CachingStrategy="RecycleElement" 
+                  ItemSelected="OnItemSelected">
+            <d:ListView.ItemsSource>
+                    <x:Array Type="{x:Type models:Item}">
+                        <models:Item
+                            Text="Jovem Nerd"
+                            Description="13 pontos" 
+                            Position="1"
+                            Avatar="jovemnerd.jpg"/>
+                    <models:Item
+                            Text="JP"
+                            Description="12 pontos"
+                            Position="2"/>
+                    <models:Item
+                            Text="Tucano"
+                            Description="11 pontos"
+                            Position="3"/>
+                    <models:Item
+                            Text="Azaghal"
+                            Description="10 pontos" 
+                            Position="4"/>
+                    <models:Item
+                            Text="Marcelo"
+                            Description="9 pontos"
+                            Position="5"/>
+                    <models:Item
+                            Text="Katiucha"
+                            Description="8 pontos"
+                            Position="6"/>
+                    </x:Array>
+                </d:ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid RowSpacing="1" 
+                              ColumnSpacing="8" 
+                              Margin="10,5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="AUTO"/>
+                                </Grid.ColumnDefinitions>
+                            <Label d:Text="1"
+                                       Text="{Binding Position}"
+                                    
+                                                      Grid.Column="0"/>
+                                <controls:CircleImage d:Source="jovemnerd.jpg"
+                                                      Source="{Binding Avatar}"
+                                                      Aspect="AspectFill" 
+                                                      Grid.Column="1" 
+                                                      WidthRequest="50" 
+                                                      HeightRequest="50" />
+                            <Grid 
+                                                      Grid.Column="2"
+                                RowSpacing="1"
+                                >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="25"/>
+                                </Grid.RowDefinitions>
+                                
+                                <Label Text="{Binding Text}" 
+                                   d:Text="Participante"
+                                   Grid.Row="0" 
+                                   Grid.RowSpan="2"
+                                   LineBreakMode="NoWrap" 
+                                   Style="{DynamicResource ListItemTextStyle}" 
+                                   FontSize="16" />
+                            <Label Text="{Binding Description, StringFormat='{0:N} Pontos'}"
+                                   d:Text="10 Pontos"
+                                   Grid.Row="1" 
+                                   LineBreakMode="NoWrap" 
+                                   Style="{DynamicResource ListItemDetailTextStyle}" 
+                                   FontSize="13" />
+                            </Grid>
+                            
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>
