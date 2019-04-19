@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
+using System.Linq;
 
 namespace BolaoJovemNerd.Models
 {
@@ -26,7 +27,7 @@ namespace BolaoJovemNerd.Models
 
         public IEnumerable<Item> GetAll()
         {
-            return items.Values;
+            return items.Values.OrderBy(i => i.Position);
         }
 
         public void Add(Item item)
