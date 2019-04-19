@@ -12,12 +12,60 @@ namespace BolaoJovemNerd.Models
 
         public ItemRepository()
         {
-            Add(new Item { Id = Guid.NewGuid().ToString(), Text = "Jovem Nerd", Description = "19", CharactersList = "Varys, Jon Snow,Briene, Cão, Euron, Cersei, Jaime ", Avatar = "jovemnerd.jpeg", Position = "1" });
-            Add(new Item { Id = Guid.NewGuid().ToString(), Text = "JP", Description = "13", CharactersList = "", Avatar = "JP.jpeg", Position = "2" });
-            Add(new Item { Id = Guid.NewGuid().ToString(), Text = "Marcelo", Description = "12", CharactersList = "", Avatar = "marcelo.jpg", Position = "3" });
-            Add(new Item { Id = Guid.NewGuid().ToString(), Text = "Tucano", Description = "11", CharactersList = "", Avatar = "tucano.jpg", Position = "4" });
-            Add(new Item { Id = Guid.NewGuid().ToString(), Text = "Katiucha", Description = "10", CharactersList = "", Avatar = "Katiucha.jpg", Position = "5" });
-            Add(new Item { Id = Guid.NewGuid().ToString(), Text = "Azaghal", Description = "9", CharactersList = "", Avatar = "azaghal.jpg", Position = "6" });
+            Add(new Item
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = "Jovem Nerd",
+                Description = "16",
+                CharactersList = "Varys, Jon Snow, Brienne, Cão, Euron, Cersei, Jaime ",
+                Avatar = "jovemnerd.jpeg",
+                Position = "1"
+            });
+            Add(new Item
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = "JP",
+                Description = "13",
+                CharactersList = "Varys, Jorah Mormont, Verme Cinzento, Daenerys, Gendry, Brienne, Sansa, Melisandre, Euron, Cersei",
+                Avatar = "JP.jpeg",
+                Position = "2"
+            });
+            Add(new Item
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = "Marcelo",
+                Description = "12",
+                CharactersList = "Varys, Verme Cinzento, Brienne, Davos, Cao, Euron, Cersei, Jaime, Tyrion, Drogon, Rhaegal",
+                Avatar = "marcelo.jpg",
+                Position = "3"
+            });
+            Add(new Item
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = "Tucano",
+                Description = "11",
+                CharactersList = "Varys, Jorah Mormont, Missandei, Daenerys, Brienne, Melisandre, Cao, Euron, Cersei, Jaime, Montanha, Drogon",
+                Avatar = "tucano.jpg",
+                Position = "4"
+            });
+            Add(new Item
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = "Katiucha",
+                Description = "10",
+                CharactersList = "Varys, Verme Cinzento, Missandei, Daenerys, Brienne, Arya, Melisandre, Cao, Euron, Cersei, Jaime, Drogon, Rhaegal",
+                Avatar = "Katiucha.jpg",
+                Position = "5"
+            });
+            Add(new Item
+            {
+                Id = Guid.NewGuid().ToString(),
+                Text = "Azaghal",
+                Description = "9",
+                CharactersList = "Jorah Mormont, Verme Cinzento, Missandei, Brienne, Sansa, Davos, Melisandre, Cao, Euron, Cersei, Jaime, Montanha, Drogon, Rhaegal",
+                Avatar = "azaghal.jpg",
+                Position = "6"
+            });
         }
 
         public Item Get(string id)

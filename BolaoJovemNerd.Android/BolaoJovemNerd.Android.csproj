@@ -99,6 +99,7 @@
     <AndroidResource Include="Resources\drawable\Katiucha.jpg" />
     <AndroidResource Include="Resources\drawable\marcelo.jpg" />
     <AndroidResource Include="Resources\drawable\tucano.jpg" />
+    <AndroidResource Include="Resources\drawable\ranking.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
