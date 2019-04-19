@@ -9,7 +9,7 @@ namespace BolaoJovemNerd
     public partial class App : Application
     {
         //TODO: Replace with *.azurewebsites.net url after deploying backend to Azure
-        public static string AzureBackendUrl = "http://localhost:5000";
+        public static string AzureBackendUrl = "http://bolaojovemnerd.azurewebsites.net";
         public static bool UseMockDataStore = false;
 
         public App()
