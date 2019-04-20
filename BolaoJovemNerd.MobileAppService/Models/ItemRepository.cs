@@ -17,7 +17,7 @@ namespace BolaoJovemNerd.Models
                 Id = Guid.NewGuid().ToString(),
                 Text = "Jovem Nerd",
                 Description = "16",
-                CharactersList = "Varys, \\r\\n Jon Snow, Brienne, Cão, Euron, Cersei, Jaime ",
+                CharactersList = "Varys, Jon Snow, Brienne, Cão, Euron, Cersei, Jaime ",
                 Avatar = "jovemnerd.jpeg",
                 Position = "1"
             });
