@@ -10,5 +10,7 @@ namespace BolaoJovemNerd.Models
         public string CharactersList { get; set; }
         public string Position { get; set; }
         public string Avatar { get; set; }
+        public string Difference { get; set; }
+
     }
 }

@@ -19,7 +19,8 @@ namespace BolaoJovemNerd.Models
                 Description = "16",
                 CharactersList = "Varys, Jon Snow, Brienne, Cão, Euron, Cersei, Jaime ",
                 Avatar = "jovemnerd.jpeg",
-                Position = "1"
+                Position = "1",
+                Difference = "-"
             });
             Add(new Item
             {
@@ -28,7 +29,9 @@ namespace BolaoJovemNerd.Models
                 Description = "13",
                 CharactersList = "Varys, Jorah Mormont, Verme Cinzento, Daenerys, Gendry, Brienne, Sansa, Melisandre, Euron, Cersei",
                 Avatar = "JP.jpeg",
-                Position = "2"
+                Position = "2",
+                Difference = "-"
+
             });
             Add(new Item
             {
@@ -37,7 +40,8 @@ namespace BolaoJovemNerd.Models
                 Description = "12",
                 CharactersList = "Varys, Verme Cinzento, Brienne, Davos, Cao, Euron, Cersei, Jaime, Tyrion, Drogon, Rhaegal",
                 Avatar = "marcelo.jpg",
-                Position = "3"
+                Position = "3",
+                Difference = "-"
             });
             Add(new Item
             {
@@ -46,7 +50,8 @@ namespace BolaoJovemNerd.Models
                 Description = "11",
                 CharactersList = "Varys, Jorah Mormont, Missandei, Daenerys, Brienne, Melisandre, Cao, Euron, Cersei, Jaime, Montanha, Drogon",
                 Avatar = "tucano.jpg",
-                Position = "4"
+                Position = "4",
+                Difference = "-"
             });
             Add(new Item
             {
@@ -55,7 +60,8 @@ namespace BolaoJovemNerd.Models
                 Description = "10",
                 CharactersList = "Varys, Verme Cinzento, Missandei, Daenerys, Brienne, Arya, Melisandre, Cao, Euron, Cersei, Jaime, Drogon, Rhaegal",
                 Avatar = "Katiucha.jpg",
-                Position = "5"
+                Position = "5",
+                Difference = "-"
             });
             Add(new Item
             {
@@ -64,7 +70,8 @@ namespace BolaoJovemNerd.Models
                 Description = "9",
                 CharactersList = "Jorah Mormont, Verme Cinzento, Missandei, Brienne, Sansa, Davos, Melisandre, Cao, Euron, Cersei, Jaime, Montanha, Drogon, Rhaegal",
                 Avatar = "azaghal.jpg",
-                Position = "6"
+                Position = "6",
+                Difference = "-"
             });
         }
 

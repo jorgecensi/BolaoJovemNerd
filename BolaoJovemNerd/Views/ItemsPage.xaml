@@ -26,26 +26,26 @@
                             Description="13 pontos" 
                             Position="1"
                             Avatar="jovemnerd.jpg"/>
-                    <models:Item
-                            Text="JP"
-                            Description="12 pontos"
-                            Position="2"/>
-                    <models:Item
-                            Text="Tucano"
-                            Description="11 pontos"
-                            Position="3"/>
-                    <models:Item
-                            Text="Azaghal"
-                            Description="10 pontos" 
-                            Position="4"/>
-                    <models:Item
-                            Text="Marcelo"
-                            Description="9 pontos"
-                            Position="5"/>
-                    <models:Item
-                            Text="Katiucha"
-                            Description="8 pontos"
-                            Position="6"/>
+                        <models:Item
+                                Text="JP"
+                                Description="12 pontos"
+                                Position="2"/>
+                        <models:Item
+                                Text="Tucano"
+                                Description="11 pontos"
+                                Position="3"/>
+                        <models:Item
+                                Text="Azaghal"
+                                Description="10 pontos" 
+                                Position="4"/>
+                        <models:Item
+                                Text="Marcelo"
+                                Description="9 pontos"
+                                Position="5"/>
+                        <models:Item
+                                Text="Katiucha"
+                                Description="8 pontos"
+                                Position="6"/>
                     </x:Array>
                 </d:ListView.ItemsSource>
             <ListView.ItemTemplate>
@@ -58,22 +58,27 @@
                                 <RowDefinition Height="50"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="25"/>
-                                    <ColumnDefinition Width="50"/>
-                                    <ColumnDefinition Width="AUTO"/>
-                                </Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="AUTO"/>
+                            </Grid.ColumnDefinitions>
                             <Label d:Text="1"
-                                       Text="{Binding Position}"
-                                    
-                                                      Grid.Column="0"/>
-                                <controls:CircleImage d:Source="jovemnerd.jpg"
-                                                      Source="{Binding Avatar}"
-                                                      Aspect="AspectFill" 
-                                                      Grid.Column="1" 
-                                                      WidthRequest="50" 
-                                                      HeightRequest="50" />
+                                   Text="{Binding Position}"
+                                   Grid.Column="0"
+                                   FontSize="30"/>
+                            <Label d:Text="+1"
+                                   Text="{Binding Difference}"
+                                   Grid.Column="1"
+                                   />
+                            <controls:CircleImage d:Source="jovemnerd.jpg"
+                                                  Source="{Binding Avatar}"
+                                                  Aspect="AspectFill" 
+                                                  Grid.Column="2" 
+                                                  WidthRequest="50" 
+                                                  HeightRequest="50" />
                             <Grid 
-                                                      Grid.Column="2"
+                                                      Grid.Column="3"
                                 RowSpacing="1"
                                 >
                                 <Grid.RowDefinitions>
