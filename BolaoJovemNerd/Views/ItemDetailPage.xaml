@@ -1,11 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BolaoJovemNerd.Views.ItemDetailPage" Title="{Binding Title}">
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Participante:" FontSize="Medium" />
-        <Label Text="{Binding Item.Text}" FontSize="Small" />
-        <Label Text="Pontos:" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" FontSize="Small" />
-        <Label Text="Personagens escolhidos para bater as botas:" FontSize="Medium" />
-        <Label Text="{Binding Item.CharactersList}" FontSize="Small" />
-    </StackLayout>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BolaoJovemNerd.Views.ItemDetailPage" 
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="{Binding Title}">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Label Text="Participante:" 
+               FontSize="Medium" 
+               Grid.Row="0"/>
+        <Grid Grid.Row="1">
+           <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <controls:CircleImage 
+            d:Source="jovemnerd.jpg"
+            Source="{Binding Item.Avatar}"
+            Aspect="AspectFill" 
+            WidthRequest="100" 
+            HeightRequest="100" 
+                Grid.Row="0"
+            Grid.Column="1"/>
+            <Label Text="{Binding Item.Text}" 
+               d:Text="Jovem Nerd" 
+               FontSize="Small"
+                   Grid.Column="1"
+               Grid.Row="1"
+              />
+        </Grid>
+        
+        
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="AUTO"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Pontos:" 
+               FontSize="Medium"
+                   Grid.Column="0"/>
+            <Label Text="{Binding Item.Description}" 
+               d:Text="10" 
+               FontSize="Small" 
+                   Grid.Column="1"/>
+        </Grid>
+        
+        <Label Text="Personagens escolhidos para bater as botas:" 
+               FontSize="Medium" 
+               Grid.Row="4"/>
+        <Label Text="{Binding Item.CharactersList}" 
+               d:Text="Varys, Jon Snow, Brienne, Cão, Euron, Cersei, Jaime " 
+               FontSize="Small" 
+               Grid.Row="5"/>
+    </Grid>
 </ContentPage>
