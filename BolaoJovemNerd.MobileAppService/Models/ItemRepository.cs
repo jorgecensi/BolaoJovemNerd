@@ -16,11 +16,11 @@ namespace BolaoJovemNerd.Models
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = "Jovem Nerd",
-                Description = "11",
+                Description = "15",
                 CharactersList = "Varys, Jon Snow, Brienne, Cão, Euron, Cersei, Jaime ",
                 Avatar = "jovemnerd.jpeg",
-                Position = "2",
-                Difference = "-"
+                Position = "3",
+                Difference = "-1"
             });
             Add(new Item
             {
@@ -29,49 +29,49 @@ namespace BolaoJovemNerd.Models
                 Description = "12",
                 CharactersList = "Varys, Jorah Mormont, Verme Cinzento, Daenerys, Gendry, Brienne, Sansa, Melisandre, Euron, Cersei",
                 Avatar = "JP.jpeg",
-                Position = "1",
-                Difference = "-"
+                Position = "5",
+                Difference = "-4"
 
             });
             Add(new Item
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = "Marcelo",
-                Description = "9",
+                Description = "13",
                 CharactersList = "Varys, Verme Cinzento, Brienne, Davos, Cao, Euron, Cersei, Jaime, Tyrion, Drogon, Rhaegal",
                 Avatar = "marcelo.jpg",
-                Position = "3",
-                Difference = "+2"
+                Position = "4",
+                Difference = "-1"
             });
             Add(new Item
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = "Tucano",
-                Description = "12",
+                Description = "18",
                 CharactersList = "Varys, Jorah Mormont, Missandei, Daenerys, Brienne, Melisandre, Cao, Euron, Cersei, Jaime, Montanha, Drogon",
                 Avatar = "tucano.jpg",
                 Position = "1",
-                Difference = "+2"
+                Difference = "-"
             });
             Add(new Item
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = "Katiucha",
-                Description = "11",
+                Description = "15",
                 CharactersList = "Varys, Verme Cinzento, Missandei, Daenerys, Brienne, Arya, Melisandre, Cao, Euron, Cersei, Jaime, Drogon, Rhaegal",
                 Avatar = "Katiucha.jpg",
-                Position = "2",
-                Difference = "+3"
+                Position = "3",
+                Difference = "-1"
             });
             Add(new Item
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = "Azaghal",
-                Description = "12",
+                Description = "16",
                 CharactersList = "Jorah Mormont, Verme Cinzento, Missandei, Brienne, Sansa, Davos, Melisandre, Cao, Euron, Cersei, Jaime, Montanha, Drogon, Rhaegal",
                 Avatar = "azaghal.jpg",
-                Position = "1",
-                Difference = "+3"
+                Position = "2",
+                Difference = "-1"
             });
         }
 
